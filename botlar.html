@@ -1,0 +1,531 @@
+﻿<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="msapplication-TileColor" content="#00a1ff">
+<meta name="msapplication-TileImage" content="https://cdn.discordapp.com/avatars/559065601197342720/8f668589666ddec4b8abed2ee1aad612.png?size=2048">
+<meta name="theme-color" content="#00a1ff">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Türkçe Botların Toplandığı Ve Geliştiriciler İçin Komut Paylaşıldığı Bir Lego Bot-List Projesi">
+<meta name="keywords" content="bot, botlar, sunucu, discord, botlar Türkiye, Türkiye, Lego Botlist,Lego,Lego Bot-List, Botlist,DBL,Discord Bot List,LegoList">
+<meta property="og:title" content="Lego Bot-List">
+<meta property="og:type" content="website">
+<meta property="og:url" content="">
+<meta property="og:description" content="TürKçe Botların Toplandığı ve Geliştiriciler İçin Komut Paylaşıldığı Bir Lego Bot-List Projesi">
+<meta property="og:image" content="https://cdn.discordapp.com/avatars/559065601197342720/8f668589666ddec4b8abed2ee1aad612.png?size=2048">
+<meta property="og:site_name" content="Lego Bot-List">
+<meta itemprop="name" content="Lego Bot-List">
+<meta itemprop="description" content="Türkiye'deki Discord botlarının toplandığı aynı zamanda da reklamlarının yapıldığı Lego Bot-list Sistemi!">
+<meta itemprop="image" content="https://cdn.discordapp.com/avatars/559065601197342720/8f668589666ddec4b8abed2ee1aad612.png?size=2048">
+
+  <meta charset="UTF-8">
+
+  <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700&amp;subset=latin-ext" rel="stylesheet">
+  <link href="https://bootswatch.com/4/cyborg/bootstrap.min.css" rel="stylesheet">
+  
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://cdn.datatables.net/v/bs4/dt-1.10.16/cr-1.4.1/r-2.2.0/datatables.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.19.1/moment.min.js" integrity="sha256-zG8v+NWiZxmjNi+CvUYnZwKtHzFtdO8cAKUIdB8+U9I=" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  
+  <link rel="stylesheet" href="css\genel.css">
+
+	<link rel="icon" href="https://cdn.discordapp.com/avatars/559065601197342720/8f668589666ddec4b8abed2ee1aad612.png?size=2048">
+	<title>Lego Bot-List</title>
+  <style>
+    .cities {
+    background-color: black;
+    color: white;
+    margin: 20px;
+    padding: 20px;
+    } 
+		.navigation ul {
+			list-style-type: none;
+		}
+		.navigation ul a {
+			text-decoration: none;
+		}
+		.navigation ul li a {
+			display: block;
+		}
+		.navigation ul li {
+			float:left;
+			width:150px;
+			padding:8px;
+			background: white;
+			border-radius: 42px;
+			margin-right:8px;
+			color: white;
+			text-align: center;
+		}
+		.navigation ul li:hover {
+			background: Bisque;
+			border-radius: 0px;
+			transition-duration: 1.5s;
+		}
+		.navigation li ul {
+			display:none;
+			position:absolute;
+		}
+		.navigation li:hover ul {
+			display:block;
+			margin-top:9px;
+			margin-left:-49px;
+		}
+		.navigation li ul li {
+			clear:both;
+			display : block;
+			border-radius: 0px;
+			padding: 3px;
+			cursor: pointer;
+		}
+		.navigation li ul li a {
+			display: block;
+		}
+		.basarili {
+			background:url(http://4.bp.blogspot.com/-jeu83lGlWHs/T5uOBF3BUmI/AAAAAAAACn4/NbgkRV3RqNM/s1600/buton-sprite.png) #eefec2 no-repeat left;
+			background-position: left -11px;
+			height:60px;
+			line-height:60px;
+			padding:0 0 0 60px;
+			margin:0 0 10px 0;
+			border:1px solid #badc5d;
+			-webkit-border-radius: 3px;  
+			-moz-border-radius: 3px;  
+			border-radius: 3px;
+		}
+		.hata {
+			background:url(http://4.bp.blogspot.com/-jeu83lGlWHs/T5uOBF3BUmI/AAAAAAAACn4/NbgkRV3RqNM/s1600/buton-sprite.png) #ffe59d no-repeat left;
+			background-position: left -11px;
+			height:60px;
+			line-height:60px;
+			padding:0 0 0 60px;
+			margin:0 0 10px 0;
+			border:1px solid #c8b26f;
+			-webkit-border-radius: 3px;  
+			-moz-border-radius: 3px;  
+			border-radius: 3px;
+		}
+    .x a {
+      color:#999;
+    }
+    .x a:hover {
+      color:#fff;
+      background-color:transparent;
+    }
+	</style>
+  <script type="text/javascript">
+			function myFunction() {
+				var x = document.getElementById("myTopnav");
+				if (x.className === "topnav") {
+					x.className += " responsive";
+				} else {
+					x.className = "topnav";
+				}
+			}
+</script>
+</head>
+ 
+  <body>
+    
+     <a id="top" name="top"></a>
+ 
+<div class="topnav" id="myTopnav">
+            <a href="index.html" class="left valign-wrapper hide-on-med-and-down" style="height: 100%;">
+            <img style="height: 20px;" src="https://cdn.discordapp.com/avatars/559065601197342720/8f668589666ddec4b8abed2ee1aad612.png?size=2048">
+          </a>
+      <a href="botlar.html">Botlar</a>
+			<a href="api.html">API</a>
+			<a href="sertifika.html">Sertifika</a>
+			<a href="hakkimizda.html">Ekip</a>
+			
+      <a href="/giris">Giriş Yap</a>
+      	
+			<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+				<i class="fa fa-bars"></i>
+			</a>
+		</div>
+ 
+  <div class="container">
+
+<div class="container">
+
+<h3 align="center" style="color:#222">
+    <strong>Tüm Botlar
+    </strong></h3>
+  <div align="center"><p>Burada sistemdeki tüm botlar yer almaktadır. <br>(Botlar oy sayısına göre orantılı olarak sıralanmaktadır.)</p></div>
+  
+  <br>
+    
+  <div align="center">
+    <input type="search" placeholder="Bot ara..." id="ara" name="ara">
+    <br>
+     <div class="select-style">
+    <select id="etiketselect">
+      <option disabled="" selected="">Bir etiket seçiniz.</option>
+      <option value="noneFilter">Filtre kapat</option>
+      <option value="Moderasyon">Moderasyon</option>
+      <option value="Müzik">Müzik</option>
+      <option value="Ayarlar">Ayarlar</option>
+      <option value="Eğlence">Eğlence</option>
+      <option value="Web Panel">Web Panel</option>
+    </select>
+</div>
+    
+    <p style="color:#333">
+      <a style="color:red">Not:</a> Botları bot adını, kütüphanesini, kısa açıklamasını, sahip adını ve etiketlerini yazarak aratabilirsiniz.<br>Botların etiketlerini seçerekte etiket üzerinden bot aratabilirsiniz. 
+     <h3 style="color:red" align="center"><strong>Sistemdeki Toplam Bot Sayısı : 6</strong></h3>
+
+    </p>
+    
+  </div>
+  <br><br><br>
+    
+  <div class="row">
+  
+   
+  
+  
+  
+	
+  
+   
+		
+          <div class="col-md-6 col-lg-4 pb-1">
+
+<div class="center-text container card-container">
+
+
+    <a href="bot\473974675194511361.html">
+      
+      <section class="card">
+                                  
+<center class="center-text container card-container">
+                                    <p class="btn white" style="float: right;margin: 10px !important;">OY :3</p>
+              <p class="btn white" style="float: right;margin: 10px !important;"><img src="https://cdn.discordapp.com/emojis/522886304615366676.png" width="15px" height="15px">Sertifikalı.</p>
+  </center>         
+  
+                                      
+        <div class="avatar">
+          <img style="border: 2px solid #ff0000" src="https://cdn.discordapp.com/avatars/473974675194511361/a0458b160e5ba8553b0f52fd1edfc40d.png" alt="Thaypon#3881">
+                     
+        </div>
+        
+        <div class="card-content">
+          <h4 class="title">
+                              Thaypon
+
+          </h4>
+          <span class="description">              <p class="card-text">Yeni Özelikler Eklendi: OTOROL,OTOTAG,RESİMLİ GİRİ</p></span>
+        
+        </div>
+                <div>
+              
+          <a></a>
+        </div>
+                      <a href="bot\473974675194511361.html" class="btn btn-primary">Göster!</a>
+                      <a href="https://discordapp.com/oauth2/authorize?client_id=473974675194511361&scope=bot&permissions=8" class="btn btn-primary">Davet Et!</a>
+
+      </section>
+      
+    </a>
+  
+</div>
+        </div>
+      
+
+    
+   
+  
+   
+		
+          <div class="col-md-6 col-lg-4 pb-1">
+
+<div class="center-text container card-container">
+
+
+    <a href="bot\546435977623765020.html">
+      
+      <section class="card">
+                                  
+                                      
+        <center class="center-text container card-container">
+
+                                  <p class="btn white" style="float: right;margin: 10px !important;">OY :1</p>
+
+        </center>  
+          
+        <div class="avatar">
+          <img style="border: 2px solid #ff0000" src="https://cdn.discordapp.com/avatars/546435977623765020/d7d887bf42d4d4ac8cb5aa09fe5ddf57.png" alt="FontRaw#4540">
+                     
+        </div>
+        
+        <div class="card-content">
+          <h4 class="title">
+                              FontRaw
+
+          </h4>
+          <span class="description">              <p class="card-text">Her Sunucuda Bulunması Gereken Türk Yapımı Bot</p></span>
+        
+        </div>
+                <div>
+              
+          <a></a>
+        </div>
+                      <a href="bot\546435977623765020.html" class="btn btn-primary">Göster!</a>
+                      <a href="https://discordapp.com/oauth2/authorize?client_id=546435977623765020&scope=bot&permissions=8" class="btn btn-primary">Davet Et!</a>
+
+      </section>
+      
+    </a>
+  
+</div>
+        </div>
+      
+
+    
+   
+  
+   
+		
+          <div class="col-md-6 col-lg-4 pb-1">
+
+<div class="center-text container card-container">
+
+
+    <a href="bot\552065760944455680.html">
+      
+      <section class="card">
+                                  
+                                      
+        <center class="center-text container card-container">
+
+                                  <p class="btn white" style="float: right;margin: 10px !important;">OY :1</p>
+
+        </center>  
+          
+        <div class="avatar">
+          <img style="border: 2px solid #ff0000" src="https://cdn.discordapp.com/avatars/552065760944455680/806dd535b6f0e8790e2dabaa0329340e.png" alt="Forever Together#8942">
+                     
+        </div>
+        
+        <div class="card-content">
+          <h4 class="title">
+                              Forever Together
+
+          </h4>
+          <span class="description">              <p class="card-text">Turkish BOT</p></span>
+        
+        </div>
+                <div>
+              
+          <a></a>
+        </div>
+                      <a href="bot\552065760944455680.html" class="btn btn-primary">Göster!</a>
+                      <a href="https://discordapp.com/oauth2/authorize?client_id=552065760944455680&scope=bot&permissions=8" class="btn btn-primary">Davet Et!</a>
+
+      </section>
+      
+    </a>
+  
+</div>
+        </div>
+      
+
+    
+   
+  
+   
+		
+          <div class="col-md-6 col-lg-4 pb-1">
+
+<div class="center-text container card-container">
+
+
+    <a href="bot\559065601197342720.html">
+      
+      <section class="card">
+                                  
+<center class="center-text container card-container">
+                                    <p class="btn white" style="float: right;margin: 10px !important;">OY :0</p>
+              <p class="btn white" style="float: right;margin: 10px !important;"><img src="https://cdn.discordapp.com/emojis/522886304615366676.png" width="15px" height="15px">Sertifikalı.</p>
+  </center>         
+  
+                                      
+        <div class="avatar">
+          <img style="border: 2px solid #ff0000" src="https://cdn.discordapp.com/avatars/559065601197342720/8f668589666ddec4b8abed2ee1aad612.png" alt="LegoBots#2094">
+                     
+        </div>
+        
+        <div class="card-content">
+          <h4 class="title">
+                              LegoBots
+
+          </h4>
+          <span class="description">              <p class="card-text">LEGO BOT LİST ÖZEL MALIDIR </p></span>
+        
+        </div>
+                <div>
+              
+          <a></a>
+        </div>
+                      <a href="bot\559065601197342720.html" class="btn btn-primary">Göster!</a>
+                      <a href="https://discordapp.com/oauth2/authorize?client_id=559065601197342720&scope=bot&permissions=8" class="btn btn-primary">Davet Et!</a>
+
+      </section>
+      
+    </a>
+  
+</div>
+        </div>
+      
+
+    
+   
+  
+   
+		
+          <div class="col-md-6 col-lg-4 pb-1">
+
+<div class="center-text container card-container">
+
+
+    <a href="bot\528954433875476482.html">
+      
+      <section class="card">
+                                  
+<center class="center-text container card-container">
+                                    <p class="btn white" style="float: right;margin: 10px !important;">OY :0</p>
+              <p class="btn white" style="float: right;margin: 10px !important;"><img src="https://cdn.discordapp.com/emojis/522886304615366676.png" width="15px" height="15px">Sertifikalı.</p>
+  </center>         
+  
+                                      
+        <div class="avatar">
+          <img style="border: 2px solid #ff0000" src="https://cdn.discordapp.com/avatars/528954433875476482/dc083d07b5f3fb554988f808b6d782f6.png" alt="! Xention#6347">
+                     
+        </div>
+        
+        <div class="card-content">
+          <h4 class="title">
+                              ! Xention
+
+          </h4>
+          <span class="description">              <p class="card-text">xdxd</p></span>
+        
+        </div>
+                <div>
+              
+          <a></a>
+        </div>
+                      <a href="bot\528954433875476482.html" class="btn btn-primary">Göster!</a>
+                      <a href="https://discordapp.com/oauth2/authorize?client_id=528954433875476482&scope=bot&permissions=8" class="btn btn-primary">Davet Et!</a>
+
+      </section>
+      
+    </a>
+  
+</div>
+        </div>
+      
+
+    
+   
+  
+   
+		
+          <div class="col-md-6 col-lg-4 pb-1">
+
+<div class="center-text container card-container">
+
+
+    <a href="bot\545197688711544833.html">
+      
+      <section class="card">
+                                  
+                                      
+        <center class="center-text container card-container">
+
+                                  <p class="btn white" style="float: right;margin: 10px !important;">OY :0</p>
+
+        </center>  
+          
+        <div class="avatar">
+          <img style="border: 2px solid #ff0000" src="https://cdn.discordapp.com/avatars/545197688711544833/3e94fb88dabfcf64cf5f986dd8fce184.png" alt="CrystarBot#6572">
+                     
+        </div>
+        
+        <div class="card-content">
+          <h4 class="title">
+                              CrystarBot
+
+          </h4>
+          <span class="description">              <p class="card-text">Türkçe Gelişmiş CrystarBot&#39;u</p></span>
+        
+        </div>
+                <div>
+              
+          <a></a>
+        </div>
+                      <a href="bot\545197688711544833.html" class="btn btn-primary">Göster!</a>
+                      <a href="https://discordapp.com/oauth2/authorize?client_id=545197688711544833&scope=bot&permissions=8" class="btn btn-primary">Davet Et!</a>
+
+      </section>
+      
+    </a>
+  
+</div>
+        </div>
+      
+
+    
+   
+   
+   </div></div></div>
+
+<script>
+$(document).ready(function(){
+ $("#ara").keyup(function(){
+    var value = $(this).val().toLowerCase();
+    $(".col-12, .col-sm-6, .col-md-4 .card").filter(function() {
+      $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+    });
+  });
+  //etiket filtresi
+  $("#etiketselect").change(function(){
+    var value = $(this).val();
+    if (value === 'noneFilter') {
+      window.location.reload(true);
+      return
+    }
+    $(".col-12, .col-sm-6, .col-md-4 .card").filter(function(){
+      $(this).toggle($(this).text().indexOf(value) > -1)
+    });
+  })
+  ;
+});
+</script>
+  
+<div class="footer">
+	<div class="footer_container">
+    <ul>
+      <li><a href="">Ana Sayfa</a></li>
+      <li><a href="botlar.html">Botlar</a></li>
+      <li><a href="api.html">Api</a></li>
+      <li><a href="sertifika.html">Sertifika</a></li>
+      <li><a href="hakkimizda.html">Hakkımızda</a></li>
+    </ul>
+    <p>
+  <p>
+    </p><h5>Bilgi</h5>
+   Bu Sitenin Discord İle Hiç Bir Anlaşma Veya Başka Bişi İle İlgisi Yoktur.
+  <p>
+	</div>
+  <div class="footer-alt">
+      Lego Bots Tüm Türk Botlarının Toplandığı Bi Topluluktur <a href="/botekle">bot ekle</a> kısmından ekleye bilirsiniz.
+    </div>
+</div></body></html>

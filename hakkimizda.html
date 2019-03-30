@@ -1,0 +1,262 @@
+﻿<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="msapplication-TileColor" content="#00a1ff">
+<meta name="msapplication-TileImage" content="https://cdn.discordapp.com/avatars/559065601197342720/8f668589666ddec4b8abed2ee1aad612.png?size=2048">
+<meta name="theme-color" content="#00a1ff">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Türkçe Botların Toplandığı Ve Geliştiriciler İçin Komut Paylaşıldığı Bir Lego Bot-List Projesi">
+<meta name="keywords" content="bot, botlar, sunucu, discord, botlar Türkiye, Türkiye, Lego Botlist,Lego,Lego Bot-List, Botlist,DBL,Discord Bot List,LegoList">
+<meta property="og:title" content="Lego Bot-List">
+<meta property="og:type" content="website">
+<meta property="og:url" content="">
+<meta property="og:description" content="TürKçe Botların Toplandığı ve Geliştiriciler İçin Komut Paylaşıldığı Bir Lego Bot-List Projesi">
+<meta property="og:image" content="https://cdn.discordapp.com/avatars/559065601197342720/8f668589666ddec4b8abed2ee1aad612.png?size=2048">
+<meta property="og:site_name" content="Lego Bot-List">
+<meta itemprop="name" content="Lego Bot-List">
+<meta itemprop="description" content="Türkiye'deki Discord botlarının toplandığı aynı zamanda da reklamlarının yapıldığı Lego Bot-list Sistemi!">
+<meta itemprop="image" content="https://cdn.discordapp.com/avatars/559065601197342720/8f668589666ddec4b8abed2ee1aad612.png?size=2048">
+
+  <meta charset="UTF-8">
+
+  <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700&amp;subset=latin-ext" rel="stylesheet">
+  <link href="https://bootswatch.com/4/cyborg/bootstrap.min.css" rel="stylesheet">
+  
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://cdn.datatables.net/v/bs4/dt-1.10.16/cr-1.4.1/r-2.2.0/datatables.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.19.1/moment.min.js" integrity="sha256-zG8v+NWiZxmjNi+CvUYnZwKtHzFtdO8cAKUIdB8+U9I=" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  
+  <link rel="stylesheet" href="css\genel.css">
+
+	<link rel="icon" href="https://cdn.discordapp.com/avatars/559065601197342720/8f668589666ddec4b8abed2ee1aad612.png?size=2048">
+	<title>Lego Bot-List</title>
+  <style>
+    .cities {
+    background-color: black;
+    color: white;
+    margin: 20px;
+    padding: 20px;
+    } 
+		.navigation ul {
+			list-style-type: none;
+		}
+		.navigation ul a {
+			text-decoration: none;
+		}
+		.navigation ul li a {
+			display: block;
+		}
+		.navigation ul li {
+			float:left;
+			width:150px;
+			padding:8px;
+			background: white;
+			border-radius: 42px;
+			margin-right:8px;
+			color: white;
+			text-align: center;
+		}
+		.navigation ul li:hover {
+			background: Bisque;
+			border-radius: 0px;
+			transition-duration: 1.5s;
+		}
+		.navigation li ul {
+			display:none;
+			position:absolute;
+		}
+		.navigation li:hover ul {
+			display:block;
+			margin-top:9px;
+			margin-left:-49px;
+		}
+		.navigation li ul li {
+			clear:both;
+			display : block;
+			border-radius: 0px;
+			padding: 3px;
+			cursor: pointer;
+		}
+		.navigation li ul li a {
+			display: block;
+		}
+		.basarili {
+			background:url(http://4.bp.blogspot.com/-jeu83lGlWHs/T5uOBF3BUmI/AAAAAAAACn4/NbgkRV3RqNM/s1600/buton-sprite.png) #eefec2 no-repeat left;
+			background-position: left -11px;
+			height:60px;
+			line-height:60px;
+			padding:0 0 0 60px;
+			margin:0 0 10px 0;
+			border:1px solid #badc5d;
+			-webkit-border-radius: 3px;  
+			-moz-border-radius: 3px;  
+			border-radius: 3px;
+		}
+		.hata {
+			background:url(http://4.bp.blogspot.com/-jeu83lGlWHs/T5uOBF3BUmI/AAAAAAAACn4/NbgkRV3RqNM/s1600/buton-sprite.png) #ffe59d no-repeat left;
+			background-position: left -11px;
+			height:60px;
+			line-height:60px;
+			padding:0 0 0 60px;
+			margin:0 0 10px 0;
+			border:1px solid #c8b26f;
+			-webkit-border-radius: 3px;  
+			-moz-border-radius: 3px;  
+			border-radius: 3px;
+		}
+    .x a {
+      color:#999;
+    }
+    .x a:hover {
+      color:#fff;
+      background-color:transparent;
+    }
+	</style>
+  <script type="text/javascript">
+			function myFunction() {
+				var x = document.getElementById("myTopnav");
+				if (x.className === "topnav") {
+					x.className += " responsive";
+				} else {
+					x.className = "topnav";
+				}
+			}
+</script>
+</head>
+ 
+  <body>
+    
+     <a id="top" name="top"></a>
+ 
+<div class="topnav" id="myTopnav">
+            <a href="index.html" class="left valign-wrapper hide-on-med-and-down" style="height: 100%;">
+            <img style="height: 20px;" src="https://cdn.discordapp.com/avatars/559065601197342720/8f668589666ddec4b8abed2ee1aad612.png?size=2048">
+          </a>
+      <a href="botlar.html">Botlar</a>
+			<a href="api.html">API</a>
+			<a href="sertifika.html">Sertifika</a>
+			<a href="hakkimizda.html">Ekip</a>
+			
+      <a href="/giris">Giriş Yap</a>
+      	
+			<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+				<i class="fa fa-bars"></i>
+			</a>
+		</div>
+ 
+  <div class="container">
+
+  <style>
+    .cities {
+    background-color: black;
+    color: white;
+    margin: 20px;
+    padding: 20px;
+    } 
+		.basarili {
+			background:url(http://4.bp.blogspot.com/-jeu83lGlWHs/T5uOBF3BUmI/AAAAAAAACn4/NbgkRV3RqNM/s1600/buton-sprite.png) #eefec2 no-repeat left;
+			background-position: left -11px;
+			height:60px;
+			line-height:60px;
+			padding:0 0 0 60px;
+			margin:0 0 10px 0;
+			border:1px solid #badc5d;
+			-webkit-border-radius: 3px;  
+			-moz-border-radius: 3px;  
+			border-radius: 3px;
+		}
+		.hata {
+			background:url(http://4.bp.blogspot.com/-jeu83lGlWHs/T5uOBF3BUmI/AAAAAAAACn4/NbgkRV3RqNM/s1600/buton-sprite.png) #ffe59d no-repeat left;
+			background-position: left -11px;
+			height:60px;
+			line-height:60px;
+			padding:0 0 0 60px;
+			margin:0 0 10px 0;
+			border:1px solid #c8b26f;
+			-webkit-border-radius: 3px;  
+			-moz-border-radius: 3px;  
+			border-radius: 3px;
+		}
+    .x a {
+      color:#999;
+    }
+    .x a:hover {
+      color:#fff;
+      background-color:transparent;
+    }
+	</style>
+ 
+            <script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+<div class="container">
+	<div class="jumbotron">
+		<div align="center">
+      <h3 style="color:#333">
+        Hakkımızda
+      </h3>
+		   <p style="font-size:15px; color:#333">
+       Türk botlarının tanıtıldığı ve reklamının yapıldığı bot sistemidir botlarınızı siteden ekleyip düzenleye bildiğiniz bir sistemdir
+      </p>
+      <br>
+      <a href="https://discord.gg/GhV7TrB" target="_blank" class="btn btn-default" style="background:linear-gradient(to right,#542fe6 0,#643dff 100%); color:#fff">Discord Sunucusuna Katıl</a>
+      <br><br>
+      <h4 style="color:#333;">Ekibimiz</h4>
+      <div class="yapimci">
+        <img src="https://cdn.discordapp.com/avatars/312962543591096322/185de798002bad9613158549a15d7c13.png?size=2048" alt="Avatar"><br>
+       <div class="yapimci-isim">󠀄ＴＡＫＴＩＫ ＢＥＹ#8544</div>
+        <p>
+          󠀄ＴＡＫＴＩＫ ＢＥＹ - Proje sahibi ve siteyi Düzenleyen Kişidir. Ve Thaypon Botun Sahibidir. Ayrıca Thaypon API'nin Proje Sahibidir.
+        <br><br><br>
+           <img src="https://cdn.discordapp.com/avatars/401036032470024201/f488a19a1741e10bed1d2247a8685137.png?size=2048" alt="Avatar"><br>
+       <div class="yapimci-isim">Xention | Lonely#5508</div>
+        <p>
+          󠀄Xention | Lonely - Proje sahibi ve siteyi Düzenleyen Kişidir. Ve Xention Botun Sahibidir.
+        </p>
+      </div>
+</div>
+  </div></div></div>
+<div class="footer">
+	<div class="footer_container">
+    <ul>
+      <li><a href="">Ana Sayfa</a></li>
+      <li><a href="botlar.html">Botlar</a></li>
+      <li><a href="api.html">Api</a></li>
+      <li><a href="sertifika.html">Sertifika</a></li>
+      <li><a href="hakkimizda.html">Hakkımızda</a></li>
+    </ul>
+    <p>
+  <p>
+    </p><h5>Bilgi</h5>
+   Bu Sitenin Discord İle Hiç Bir Anlaşma Veya Başka Bişi İle İlgisi Yoktur.
+  <p>
+	</div>
+  <div class="footer-alt">
+      Lego Bots Tüm Türk Botlarının Toplandığı Bi Topluluktur <a href="/botekle">bot ekle</a> kısmından ekleye bilirsiniz.
+    </div>
+</div></body></html>

@@ -1,0 +1,68 @@
+Uri: https://bots.legobots.cf/
+File Name: C:\Users\q\Desktop\bots.legobots.cf\index.html
+Content Type: text/html
+
+Uri: https://bots.legobots.cf/css/genel.css
+File Name: C:\Users\q\Desktop\bots.legobots.cf\css\genel.css
+Content Type: text/css
+
+Uri: https://bots.legobots.cf/botlar
+File Name: C:\Users\q\Desktop\bots.legobots.cf\botlar.html
+Content Type: text/html
+
+Uri: https://bots.legobots.cf/api
+File Name: C:\Users\q\Desktop\bots.legobots.cf\api.html
+Content Type: text/html
+
+Uri: https://bots.legobots.cf/sertifika
+File Name: C:\Users\q\Desktop\bots.legobots.cf\sertifika.html
+Content Type: text/html
+
+Uri: https://bots.legobots.cf/hakkimizda
+File Name: C:\Users\q\Desktop\bots.legobots.cf\hakkimizda.html
+Content Type: text/html
+
+Uri: https://bots.legobots.cf/bot/473974675194511361
+File Name: C:\Users\q\Desktop\bots.legobots.cf\bot\473974675194511361.html
+Content Type: text/html
+
+Uri: https://bots.legobots.cf/bot/559065601197342720
+File Name: C:\Users\q\Desktop\bots.legobots.cf\bot\559065601197342720.html
+Content Type: text/html
+
+Uri: https://bots.legobots.cf/bot/528954433875476482
+File Name: C:\Users\q\Desktop\bots.legobots.cf\bot\528954433875476482.html
+Content Type: text/html
+
+Uri: https://fonts.googleapis.com/css?family=Open+Sans:400,600
+File Name: C:\Users\q\Desktop\bots.legobots.cf\css.css
+Content Type: text/css
+
+Uri: https://bots.legobots.cf/bot/546435977623765020
+File Name: C:\Users\q\Desktop\bots.legobots.cf\bot\546435977623765020.html
+Content Type: text/html
+
+Uri: https://bots.legobots.cf/bot/552065760944455680
+File Name: C:\Users\q\Desktop\bots.legobots.cf\bot\552065760944455680.html
+Content Type: text/html
+
+Uri: https://bots.legobots.cf/bot/545197688711544833
+File Name: C:\Users\q\Desktop\bots.legobots.cf\bot\545197688711544833.html
+Content Type: text/html
+
+Uri: https://bots.legobots.cf/api/botlar/473974675194511361
+File Name: C:\Users\q\Desktop\bots.legobots.cf\api\botlar\473974675194511361.json
+Content Type: application/json
+
+Uri: https://bots.legobots.cf/api/botlar/473974675194511361/oylar/276829048943149057
+File Name: C:\Users\q\Desktop\bots.legobots.cf\api\botlar\473974675194511361\oylar\276829048943149057.json
+Content Type: application/json
+
+Uri: https://fonts.gstatic.com/s/opensans/v16/mem8YaGs126MiZpBA-UFVZ0e.ttf
+File Name: C:\Users\q\Desktop\bots.legobots.cf\s\opensans\v16\mem8YaGs126MiZpBA-UFVZ0e.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/opensans/v16/mem5YaGs126MiZpBA-UNirkOUuhs.ttf
+File Name: C:\Users\q\Desktop\bots.legobots.cf\s\opensans\v16\mem5YaGs126MiZpBA-UNirkOUuhs.ttf
+Content Type: font/ttf
+
